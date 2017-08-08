@@ -13,3 +13,5 @@ PreCommit:
 
   TrailingWhitespace:
     enabled: true
+    exclude:
+      - 'src/**/*.snap'
