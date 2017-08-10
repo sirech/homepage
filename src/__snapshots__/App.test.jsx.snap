@@ -1,29 +1,68 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components App renders correctly 1`] = `
-<div
-  className="App"
->
+<div>
+  <header
+    className="mb-4"
+  >
+    <nav
+      className="navbar bg-faded"
+    >
+      <a
+        className="navbar-brand"
+      >
+        Mario Fernandez
+      </a>
+    </nav>
+  </header>
   <div
-    className="App-header"
+    className="container-fluid"
   >
-    <img
-      alt="logo"
-      className="App-logo"
-      src="logo.svg"
-    />
-    <h2>
-      Welcome to React
-    </h2>
+    <div
+      className="row"
+    >
+      <div
+        className="col-12"
+      >
+        <div>
+          <div
+            className="card"
+          >
+            <div
+              className="card-block"
+            >
+              <h5
+                className="mb-0 card-title"
+              >
+                Links
+              </h5>
+            </div>
+            <ul
+              className="list-group list-group-flush"
+            >
+              <li
+                className="list-group-item"
+              >
+                <a
+                  href="https://github.com/sirech"
+                >
+                  Github Repositories
+                </a>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <a
+                  href="https://stackoverflow.com/users/3785/mario-f"
+                >
+                  Stackoverflow
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <p
-    className="App-intro"
-  >
-    To get started, edit 
-    <code>
-      src/App.js
-    </code>
-     and save to reload.
-  </p>
 </div>
 `;

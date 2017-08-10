@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components Header renders correctly 1`] = `
+<header
+  className="mb-4"
+>
+  <nav
+    className="navbar bg-faded"
+  >
+    <a
+      className="navbar-brand"
+    >
+      Mario Fernandez
+    </a>
+  </nav>
+</header>
+`;

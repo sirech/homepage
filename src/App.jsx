@@ -1,26 +1,29 @@
 import React, { Component } from 'react'
-import { Helmet } from 'react-helmet'
 
-import logo from './logo.svg'
-import './App.css'
+import { Col, Container, Row } from 'reactstrap'
+
+import Header from './molecules/header'
+import Links from './molecules/links'
 
 class App extends Component {
   render () {
     return (
-      <div className='App'>
-        <Helmet>
-          <title>hceris</title>
-        </Helmet>
-        <div className='App-header'>
-          <img src={logo} className='App-logo' alt='logo' />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className='App-intro'>
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <Header />
+        <Content />
       </div>
     )
   }
 }
+
+const Content = () => (
+  <Container fluid>
+    <Row>
+      <Col xs='12'>
+        <Links />
+      </Col>
+    </Row>
+  </Container>
+)
 
 export default App
