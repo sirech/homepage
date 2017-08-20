@@ -19,100 +19,159 @@ exports[`components App renders correctly 1`] = `
     className="container-fluid"
   >
     <div
-      className="card-columns"
+      className="mb-3 row"
     >
       <div
-        className="card"
+        className="col-12"
       >
         <div
-          className="card-block"
+          className="card"
         >
           <h5
-            className="mb-0 card-title"
+            className="card-header"
           >
-            Links
+            About
           </h5>
+          <div
+            className="card-block"
+          >
+            <p
+              className="card-text"
+            >
+              <p>
+                I have been programming for a while already. Counting the time when I was studying, it has been over ten years already. If 
+                <a
+                  href="http://norvig.com/21-days.html"
+                >
+                  Peter Norvig is correct
+                </a>
+                 I should know by now what I am doing, although I often get the feeling I don't know anything (which seems to be a widespread problem if you see the job applications we get).
+              </p>
+              <p>
+                In this time I have been in a number of companies, mostly focused on web programming. I started as a developer, focused on backend topics. At some point I became frustrated having to wait for somebody else to implement the layouts, so I ended up learning HTML and CSS past the 
+                <i>
+                  random pixel assignment part
+                </i>
+                . I guess that qualifies me as a 
+                <b>
+                  Full Stack Developer
+                </b>
+                .
+              </p>
+              <p>
+                At some point somebody thought it was a good idea to make me the technical lead of a SCRUM team. I quickly discovered that it is not the same doing something yourself than helping somebody figure it out himself. I learned, somewhat to my surprise, that I really enjoy doing that, and that the people I have coached did as well. At least they don't tend to run away screaming from me, which is, I think, a good thing. Another consequence of this switch is that I have done a lot of interviewing in the last years.
+              </p>
+              <p>
+                I have managed to work with plenty of technologies and tools. It took my a while to realize, though, that while solid tech and good foundations are important, they are not the only thing needed to deliver high quality software.
+              </p>
+            </p>
+          </div>
         </div>
-        <ul
-          className="list-group list-group-flush"
-        >
-          <li
-            className="list-group-item"
-          >
-            <a
-              href="https://github.com/sirech"
-            >
-              Github Repositories
-            </a>
-          </li>
-          <li
-            className="list-group-item"
-          >
-            <a
-              href="https://stackoverflow.com/users/3785/mario-f"
-            >
-              Stackoverflow
-            </a>
-          </li>
-        </ul>
       </div>
+    </div>
+    <div
+      className="row"
+    >
       <div
-        className="card"
+        className="col-12"
       >
         <div
-          className="card-block"
+          className="card-columns"
         >
-          <h5
-            className="mb-0 card-title"
+          <div
+            className="card"
           >
-            Talks
-          </h5>
-          <p
-            className="card-text"
+            <div
+              className="card-block"
+            >
+              <h5
+                className="mb-0 card-title"
+              >
+                Links
+              </h5>
+            </div>
+            <ul
+              className="list-group list-group-flush"
+            >
+              <li
+                className="list-group-item"
+              >
+                <a
+                  href="https://github.com/sirech"
+                >
+                  Github Repositories
+                </a>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <a
+                  href="https://stackoverflow.com/users/3785/mario-f"
+                >
+                  Stackoverflow
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            className="card"
           >
-            I used to hate talking in front of people. But I have done technical presentations for a while, and at some point I started to like it. Not that I have mastered, though. For instance, I still tend to talk too fast. I have mostly done technical presentations, at work and at ruby meetups. Hope to eventually get some experience with bigger crowds
-          </p>
+            <div
+              className="card-block"
+            >
+              <h5
+                className="mb-0 card-title"
+              >
+                Talks
+              </h5>
+              <p
+                className="card-text"
+              >
+                I used to hate talking in front of people. But I have done technical presentations for a while, and at some point I started to like it. Not that I have mastered, though. For instance, I still tend to talk too fast. I have mostly done technical presentations, at work and at ruby meetups. Hope to eventually get some experience with bigger crowds
+              </p>
+            </div>
+            <ul
+              className="list-group list-group-flush"
+            >
+              <li
+                className="list-group-item"
+              >
+                <a
+                  href="https://github.com/sirech/talks/raw/master/2016-02-rubygroupmunich-mediumapps.pdf"
+                >
+                  Ruby at XING
+                </a>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <a
+                  href="https://github.com/sirech/talks/raw/master/2016-04-rubygroupmunich-rubocop.pdf"
+                >
+                  Using RuboCop
+                </a>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <a
+                  href="https://github.com/sirech/talks/raw/master/2017-03-es2017.pdf"
+                >
+                  Intro to ES2017
+                </a>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <a
+                  href="https://github.com/sirech/talks/blob/master/2017-04-rubygroupmunich-yai.pdf"
+                >
+                  Assign PRs automatically with YAI
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul
-          className="list-group list-group-flush"
-        >
-          <li
-            className="list-group-item"
-          >
-            <a
-              href="https://github.com/sirech/talks/raw/master/2016-02-rubygroupmunich-mediumapps.pdf"
-            >
-              Ruby at XING
-            </a>
-          </li>
-          <li
-            className="list-group-item"
-          >
-            <a
-              href="https://github.com/sirech/talks/raw/master/2016-04-rubygroupmunich-rubocop.pdf"
-            >
-              Using RuboCop
-            </a>
-          </li>
-          <li
-            className="list-group-item"
-          >
-            <a
-              href="https://github.com/sirech/talks/raw/master/2017-03-es2017.pdf"
-            >
-              Intro to ES2017
-            </a>
-          </li>
-          <li
-            className="list-group-item"
-          >
-            <a
-              href="https://github.com/sirech/talks/blob/master/2017-04-rubygroupmunich-yai.pdf"
-            >
-              Assign PRs automatically with YAI
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
   </div>

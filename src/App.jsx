@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 
-import { Container, CardColumns } from 'reactstrap'
+import { Row, Col, Container, CardColumns } from 'reactstrap'
 
+import About from './molecules/about'
 import Header from './molecules/header'
 import Links from './molecules/links'
 import Talks from './molecules/talks'
@@ -19,10 +20,21 @@ class App extends Component {
 
 const Content = () => (
   <Container fluid>
-    <CardColumns>
-      <Links />
-      <Talks />
-    </CardColumns>
+
+    <Row className='mb-3'>
+      <Col xs='12'>
+        <About />
+      </Col>
+    </Row>
+
+    <Row>
+      <Col xs='12'>
+        <CardColumns>
+          <Links />
+          <Talks />
+        </CardColumns>
+      </Col>
+    </Row>
   </Container>
 )
 
