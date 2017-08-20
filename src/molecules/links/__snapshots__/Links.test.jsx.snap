@@ -1,41 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components Links renders correctly 1`] = `
-<div>
+<div
+  className="card"
+>
   <div
-    className="card"
+    className="card-block"
   >
-    <div
-      className="card-block"
+    <h5
+      className="mb-0 card-title"
     >
-      <h5
-        className="mb-0 card-title"
-      >
-        Links
-      </h5>
-    </div>
-    <ul
-      className="list-group list-group-flush"
-    >
-      <li
-        className="list-group-item"
-      >
-        <a
-          href="https://github.com/sirech"
-        >
-          Github Repositories
-        </a>
-      </li>
-      <li
-        className="list-group-item"
-      >
-        <a
-          href="https://stackoverflow.com/users/3785/mario-f"
-        >
-          Stackoverflow
-        </a>
-      </li>
-    </ul>
+      Links
+    </h5>
   </div>
+  <ul
+    className="list-group list-group-flush"
+  >
+    <li
+      className="list-group-item"
+    >
+      <a
+        href="https://github.com/sirech"
+      >
+        Github Repositories
+      </a>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      <a
+        href="https://stackoverflow.com/users/3785/mario-f"
+      >
+        Stackoverflow
+      </a>
+    </li>
+  </ul>
 </div>
 `;
