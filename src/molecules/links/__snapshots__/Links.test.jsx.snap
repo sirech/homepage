@@ -2,7 +2,7 @@
 
 exports[`components Links renders correctly 1`] = `
 <div
-  className="card"
+  className="mb-3 card"
 >
   <div
     className="card-block"

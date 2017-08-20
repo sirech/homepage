@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 
-import { Row, Col, Container, CardColumns } from 'reactstrap'
+import { Row, Col, Container } from 'reactstrap'
 
 import About from './molecules/about'
 import Header from './molecules/header'
@@ -23,30 +23,32 @@ class App extends Component {
   }
 }
 
+const main = () => (
+  <Route exact path='/' render={() => (
+    <Redirect to='/about' />
+  )} />
+)
 const Content = () => (
   <Container fluid>
-    <Route exact path='/' render={() => (
-      <Redirect to='/about' />
-    )} />
+    {main()}
+
     <Route exact path='/about'>
       <div>
-        <Row className='mb-3'>
-          <Col xs='12'>
+        <Row>
+          <Col xs='12' md='8' lg='6'>
             <About />
           </Col>
-        </Row>
 
-        <Row>
-          <Col xs='12'>
-            <CardColumns>
-              <Links />
-              <Talks />
-              <Techs />
-              <Tools />
-            </CardColumns>
+          <Col xs='12' sm='6' md='4' lg='3'>
+            <Links />
+            <Talks />
+          </Col>
+
+          <Col xs='12' sm='6' md='12' lg='3'>
+            <Techs />
+            <Tools />
           </Col>
         </Row>
-
       </div>
     </Route>
   </Container>

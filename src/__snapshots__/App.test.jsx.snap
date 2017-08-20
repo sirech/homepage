@@ -23,13 +23,13 @@ exports[`components App renders correctly 1`] = `
   >
     <div>
       <div
-        className="mb-3 row"
+        className="row"
       >
         <div
-          className="col-12"
+          className="col-12 col-md-8 col-lg-6"
         >
           <div
-            className="card"
+            className="mb-3 card"
           >
             <h5
               className="card-header"
@@ -90,262 +90,258 @@ exports[`components App renders correctly 1`] = `
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="row"
-      >
         <div
-          className="col-12"
+          className="col-12 col-sm-6 col-md-4 col-lg-3"
         >
           <div
-            className="card-columns"
+            className="mb-3 card"
           >
             <div
-              className="card"
-            >
-              <div
-                className="card-block"
-              >
-                <h5
-                  className="mb-0 card-title"
-                >
-                  Links
-                </h5>
-              </div>
-              <ul
-                className="list-group list-group-flush"
-              >
-                <li
-                  className="list-group-item"
-                >
-                  <a
-                    href="https://github.com/sirech"
-                  >
-                    Github Repositories
-                  </a>
-                </li>
-                <li
-                  className="list-group-item"
-                >
-                  <a
-                    href="https://stackoverflow.com/users/3785/mario-f"
-                  >
-                    Stackoverflow
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div
-              className="card"
-            >
-              <div
-                className="card-block"
-              >
-                <h5
-                  className="mb-0 card-title"
-                >
-                  Talks
-                </h5>
-                <p
-                  className="card-text"
-                >
-                  I used to hate talking in front of people. But I have done technical presentations for a while, and at some point I started to like it. Not that I have mastered, though. For instance, I still tend to talk too fast. I have mostly done technical presentations, at work and at ruby meetups. Hope to eventually get some experience with bigger crowds
-                </p>
-              </div>
-              <ul
-                className="list-group list-group-flush"
-              >
-                <li
-                  className="list-group-item"
-                >
-                  <a
-                    href="https://github.com/sirech/talks/raw/master/2016-02-rubygroupmunich-mediumapps.pdf"
-                  >
-                    Ruby at XING
-                  </a>
-                </li>
-                <li
-                  className="list-group-item"
-                >
-                  <a
-                    href="https://github.com/sirech/talks/raw/master/2016-04-rubygroupmunich-rubocop.pdf"
-                  >
-                    Using RuboCop
-                  </a>
-                </li>
-                <li
-                  className="list-group-item"
-                >
-                  <a
-                    href="https://github.com/sirech/talks/raw/master/2017-03-es2017.pdf"
-                  >
-                    Intro to ES2017
-                  </a>
-                </li>
-                <li
-                  className="list-group-item"
-                >
-                  <a
-                    href="https://github.com/sirech/talks/blob/master/2017-04-rubygroupmunich-yai.pdf"
-                  >
-                    Assign PRs automatically with YAI
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div
-              className="card"
-              id="techs"
+              className="card-block"
             >
               <h5
-                className="card-header"
+                className="mb-0 card-title"
               >
-                Technologies
+                Links
               </h5>
-              <div
-                className="card-block"
-              >
-                <p
-                  className="card-text"
-                >
-                  Following the 
-                  <a
-                    href="https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X"
-                  >
-                    Pragmatic Programmer
-                  </a>
-                   advice, I try to learn some new technology every year. My github account is full of small projects I have started to teach myself new things, such as this page itself. A list of them, in no particular order:
-                </p>
-                <span
-                  className="mr-1 badge badge-primary badge-pill"
-                >
-                  Ruby on Rails
-                </span>
-                <span
-                  className="mr-1 badge badge-info badge-pill"
-                >
-                  JavaScript
-                </span>
-                <span
-                  className="mr-1 badge badge-success badge-pill"
-                >
-                  React
-                </span>
-                <span
-                  className="mr-1 badge badge-info badge-pill"
-                >
-                  SQL
-                </span>
-                <span
-                  className="mr-1 badge badge-info badge-pill"
-                >
-                  REST
-                </span>
-                <span
-                  className="mr-1 badge badge-success badge-pill"
-                >
-                  Docker
-                </span>
-                <span
-                  className="mr-1 badge badge-info badge-pill"
-                >
-                  HTML
-                </span>
-                <span
-                  className="mr-1 badge badge-info badge-pill"
-                >
-                  CSS
-                </span>
-                <span
-                  className="mr-1 badge badge-warning badge-pill"
-                >
-                  Python
-                </span>
-                <span
-                  className="mr-1 badge badge-warning badge-pill"
-                >
-                  Java
-                </span>
-                <span
-                  className="mr-1 badge badge-danger badge-pill"
-                >
-                  jQuery
-                </span>
-              </div>
             </div>
-            <div
-              className="card"
-              id="tools"
+            <ul
+              className="list-group list-group-flush"
             >
-              <h5
-                className="card-header"
+              <li
+                className="list-group-item"
               >
-                Tools
-              </h5>
-              <div
-                className="card-block"
+                <a
+                  href="https://github.com/sirech"
+                >
+                  Github Repositories
+                </a>
+              </li>
+              <li
+                className="list-group-item"
               >
-                <p
-                  className="card-text"
+                <a
+                  href="https://stackoverflow.com/users/3785/mario-f"
                 >
-                  I am a bit picky about the tools I use. Actually, I am 
-                  <b>
-                    very picky
-                  </b>
-                  . I cannot remember how many times I did rewrite my shell config in the past. It is problematic for pair programming because I usually am the only one that can work at my computer.
-                </p>
-                <p
-                  className="card-text"
+                  Stackoverflow
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            className="mb-3 card"
+          >
+            <h5
+              className="card-header"
+            >
+              Talks
+            </h5>
+            <div
+              className="card-block"
+            >
+              <p
+                className="card-text"
+              >
+                I used to hate talking in front of people. But I have done technical presentations for a while, and at some point I started to like it. Not that I have mastered, though. For instance, I still tend to talk too fast. I have mostly done technical presentations, at work and at ruby meetups. Hope to eventually get some experience with bigger crowds
+              </p>
+            </div>
+            <ul
+              className="list-group list-group-flush"
+            >
+              <li
+                className="list-group-item"
+              >
+                <a
+                  href="https://github.com/sirech/talks/raw/master/2016-02-rubygroupmunich-mediumapps.pdf"
                 >
-                  Nowadays I try to at least outsource my configurations a bit, using some awesome community driven ones like 
-                  <a
-                    href="http://spacemacs.org"
-                  >
-                    Spacemacs
-                  </a>
-                   and 
-                  <a
-                    href="https://github.com/robbyrussell/oh-my-zsh"
-                  >
-                    Oh My Zsh
-                  </a>
-                </p>
-                <span
-                  className="mr-1 badge badge-default badge-pill"
+                  Ruby at XING
+                </a>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <a
+                  href="https://github.com/sirech/talks/raw/master/2016-04-rubygroupmunich-rubocop.pdf"
                 >
-                  Emacs
-                </span>
-                <span
-                  className="mr-1 badge badge-default badge-pill"
+                  Using RuboCop
+                </a>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <a
+                  href="https://github.com/sirech/talks/raw/master/2017-03-es2017.pdf"
                 >
-                  zsh
-                </span>
-                <span
-                  className="mr-1 badge badge-default badge-pill"
+                  Intro to ES2017
+                </a>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <a
+                  href="https://github.com/sirech/talks/blob/master/2017-04-rubygroupmunich-yai.pdf"
                 >
-                  git
-                </span>
-                <span
-                  className="mr-1 badge badge-default badge-pill"
+                  Assign PRs automatically with YAI
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          className="col-12 col-sm-6 col-md-12 col-lg-3"
+        >
+          <div
+            className="mb-3 card"
+            id="techs"
+          >
+            <h5
+              className="card-header"
+            >
+              Technologies
+            </h5>
+            <div
+              className="card-block"
+            >
+              <p
+                className="card-text"
+              >
+                Following the 
+                <a
+                  href="https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X"
                 >
-                  tmux
-                </span>
-                <span
-                  className="mr-1 badge badge-default badge-pill"
+                  Pragmatic Programmer
+                </a>
+                 advice, I try to learn some new technology every year. My github account is full of small projects I have started to teach myself new things, such as this page itself. A list of them, in no particular order:
+              </p>
+              <span
+                className="mr-1 badge badge-primary badge-pill"
+              >
+                Ruby on Rails
+              </span>
+              <span
+                className="mr-1 badge badge-info badge-pill"
+              >
+                JavaScript
+              </span>
+              <span
+                className="mr-1 badge badge-success badge-pill"
+              >
+                React
+              </span>
+              <span
+                className="mr-1 badge badge-info badge-pill"
+              >
+                SQL
+              </span>
+              <span
+                className="mr-1 badge badge-info badge-pill"
+              >
+                REST
+              </span>
+              <span
+                className="mr-1 badge badge-success badge-pill"
+              >
+                Docker
+              </span>
+              <span
+                className="mr-1 badge badge-info badge-pill"
+              >
+                HTML
+              </span>
+              <span
+                className="mr-1 badge badge-info badge-pill"
+              >
+                CSS
+              </span>
+              <span
+                className="mr-1 badge badge-warning badge-pill"
+              >
+                Python
+              </span>
+              <span
+                className="mr-1 badge badge-warning badge-pill"
+              >
+                Java
+              </span>
+              <span
+                className="mr-1 badge badge-danger badge-pill"
+              >
+                jQuery
+              </span>
+            </div>
+          </div>
+          <div
+            className="card"
+            id="tools"
+          >
+            <h5
+              className="card-header"
+            >
+              Tools
+            </h5>
+            <div
+              className="card-block"
+            >
+              <p
+                className="card-text"
+              >
+                I am a bit picky about the tools I use. Actually, I am 
+                <b>
+                  very picky
+                </b>
+                . I cannot remember how many times I did rewrite my shell config in the past. It is problematic for pair programming because I usually am the only one that can work at my computer.
+              </p>
+              <p
+                className="card-text"
+              >
+                Nowadays I try to at least outsource my configurations a bit, using some awesome community driven ones like 
+                <a
+                  href="http://spacemacs.org"
                 >
-                  Google Chrome
-                </span>
-                <span
-                  className="mr-1 badge badge-default badge-pill"
+                  Spacemacs
+                </a>
+                 and 
+                <a
+                  href="https://github.com/robbyrussell/oh-my-zsh"
                 >
-                  hammerspoon
-                </span>
-                <span
-                  className="mr-1 badge badge-default badge-pill"
-                >
-                  Alfred
-                </span>
-              </div>
+                  Oh My Zsh
+                </a>
+              </p>
+              <span
+                className="mr-1 badge badge-default badge-pill"
+              >
+                Emacs
+              </span>
+              <span
+                className="mr-1 badge badge-default badge-pill"
+              >
+                zsh
+              </span>
+              <span
+                className="mr-1 badge badge-default badge-pill"
+              >
+                git
+              </span>
+              <span
+                className="mr-1 badge badge-default badge-pill"
+              >
+                tmux
+              </span>
+              <span
+                className="mr-1 badge badge-default badge-pill"
+              >
+                Google Chrome
+              </span>
+              <span
+                className="mr-1 badge badge-default badge-pill"
+              >
+                hammerspoon
+              </span>
+              <span
+                className="mr-1 badge badge-default badge-pill"
+              >
+                Alfred
+              </span>
             </div>
           </div>
         </div>

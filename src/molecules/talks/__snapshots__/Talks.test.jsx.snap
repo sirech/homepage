@@ -2,16 +2,16 @@
 
 exports[`components Talks renders correctly 1`] = `
 <div
-  className="card"
+  className="mb-3 card"
 >
+  <h5
+    className="card-header"
+  >
+    Talks
+  </h5>
   <div
     className="card-block"
   >
-    <h5
-      className="mb-0 card-title"
-    >
-      Talks
-    </h5>
     <p
       className="card-text"
     >

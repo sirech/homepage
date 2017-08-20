@@ -4,7 +4,7 @@ import { Card, CardHeader, CardText, CardBlock } from 'reactstrap'
 import { HashLink } from 'react-router-hash-link'
 
 const About = () => (
-  <Card>
+  <Card className='mb-3' >
     <CardHeader tag='h5'>About</CardHeader>
     <CardBlock>
       <CardText>

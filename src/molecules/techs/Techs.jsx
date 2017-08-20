@@ -25,7 +25,7 @@ const renderTechs = () => (
 )
 
 const Techs = () => (
-  <Card id='techs'>
+  <Card id='techs' className='mb-3'>
     <CardHeader tag='h5'>Technologies</CardHeader>
     <CardBlock>
       <CardText>Following the <a href='https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X'>Pragmatic Programmer</a> advice, I try to learn some new technology every year. My github account is full of small projects I have started to teach myself new things, such as this page itself. A list of them, in no particular order:</CardText>
