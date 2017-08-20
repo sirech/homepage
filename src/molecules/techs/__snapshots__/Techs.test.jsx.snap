@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components Techs renders correctly 1`] = `
+<div
+  className="card"
+>
+  <h5
+    className="card-header"
+  >
+    Technologies
+  </h5>
+  <div
+    className="card-block"
+  >
+    <p
+      className="card-text"
+    >
+      Following the 
+      <a
+        href="https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X"
+      >
+        Pragmatic Programmer
+      </a>
+       advice, I try to learn some new technology every year. My github account is full of small projects I have started to teach myself new things, such as this page itself. A list of them, in no particular order:
+    </p>
+    <span
+      className="mr-1 badge badge-primary badge-pill"
+    >
+      Ruby on Rails
+    </span>
+    <span
+      className="mr-1 badge badge-info badge-pill"
+    >
+      JavaScript
+    </span>
+    <span
+      className="mr-1 badge badge-success badge-pill"
+    >
+      React
+    </span>
+    <span
+      className="mr-1 badge badge-info badge-pill"
+    >
+      SQL
+    </span>
+    <span
+      className="mr-1 badge badge-info badge-pill"
+    >
+      REST
+    </span>
+    <span
+      className="mr-1 badge badge-success badge-pill"
+    >
+      Docker
+    </span>
+    <span
+      className="mr-1 badge badge-info badge-pill"
+    >
+      HTML
+    </span>
+    <span
+      className="mr-1 badge badge-info badge-pill"
+    >
+      CSS
+    </span>
+    <span
+      className="mr-1 badge badge-warning badge-pill"
+    >
+      Python
+    </span>
+    <span
+      className="mr-1 badge badge-warning badge-pill"
+    >
+      Java
+    </span>
+    <span
+      className="mr-1 badge badge-danger badge-pill"
+    >
+      jQuery
+    </span>
+  </div>
+</div>
+`;

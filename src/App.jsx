@@ -6,6 +6,7 @@ import About from './molecules/about'
 import Header from './molecules/header'
 import Links from './molecules/links'
 import Talks from './molecules/talks'
+import Techs from './molecules/techs'
 
 class App extends Component {
   render () {
@@ -32,6 +33,7 @@ const Content = () => (
         <CardColumns>
           <Links />
           <Talks />
+          <Techs />
         </CardColumns>
       </Col>
     </Row>
