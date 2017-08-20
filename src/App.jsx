@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 
 import { Row, Col, Container, CardColumns } from 'reactstrap'
 
@@ -25,9 +25,11 @@ class App extends Component {
 
 const Content = () => (
   <Container fluid>
-    <Route exact path='/'>
+    <Route exact path='/' render={() => (
+      <Redirect to='/about' />
+    )} />
+    <Route exact path='/about'>
       <div>
-
         <Row className='mb-3'>
           <Col xs='12'>
             <About />

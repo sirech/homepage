@@ -9,6 +9,9 @@ exports[`components Header renders correctly 1`] = `
   >
     <a
       className="navbar-brand"
+      href="/about"
+      onClick={[Function]}
+      style={undefined}
     >
       Mario Fernandez
     </a>

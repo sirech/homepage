@@ -9,7 +9,10 @@ exports[`components App renders correctly 1`] = `
       className="navbar bg-faded"
     >
       <a
-        className="navbar-brand"
+        className=" active navbar-brand"
+        href="/about"
+        onClick={[Function]}
+        style={Object {}}
       >
         Mario Fernandez
       </a>
