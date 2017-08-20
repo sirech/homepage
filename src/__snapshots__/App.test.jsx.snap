@@ -19,47 +19,103 @@ exports[`components App renders correctly 1`] = `
     className="container-fluid"
   >
     <div
-      className="row"
+      className="card-columns"
     >
-      <div
-        className="col-12"
-      >
-        <div>
+      <div>
+        <div
+          className="card"
+        >
           <div
-            className="card"
+            className="card-block"
           >
-            <div
-              className="card-block"
+            <h5
+              className="mb-0 card-title"
             >
-              <h5
-                className="mb-0 card-title"
-              >
-                Links
-              </h5>
-            </div>
-            <ul
-              className="list-group list-group-flush"
-            >
-              <li
-                className="list-group-item"
-              >
-                <a
-                  href="https://github.com/sirech"
-                >
-                  Github Repositories
-                </a>
-              </li>
-              <li
-                className="list-group-item"
-              >
-                <a
-                  href="https://stackoverflow.com/users/3785/mario-f"
-                >
-                  Stackoverflow
-                </a>
-              </li>
-            </ul>
+              Links
+            </h5>
           </div>
+          <ul
+            className="list-group list-group-flush"
+          >
+            <li
+              className="list-group-item"
+            >
+              <a
+                href="https://github.com/sirech"
+              >
+                Github Repositories
+              </a>
+            </li>
+            <li
+              className="list-group-item"
+            >
+              <a
+                href="https://stackoverflow.com/users/3785/mario-f"
+              >
+                Stackoverflow
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div
+          className="card"
+        >
+          <div
+            className="card-block"
+          >
+            <h5
+              className="mb-0 card-title"
+            >
+              Talks
+            </h5>
+            <p
+              className="card-text"
+            >
+              I used to hate talking in front of people. But I have done technical presentations for a while, and at some point I started to like it. Not that I have mastered, though. For instance, I still tend to talk too fast. I have mostly done technical presentations, at work and at ruby meetups. Hope to eventually get some experience with bigger crowds
+            </p>
+          </div>
+          <ul
+            className="list-group list-group-flush"
+          >
+            <li
+              className="list-group-item"
+            >
+              <a
+                href="https://github.com/sirech/talks/raw/master/2016-02-rubygroupmunich-mediumapps.pdf"
+              >
+                Ruby at XING
+              </a>
+            </li>
+            <li
+              className="list-group-item"
+            >
+              <a
+                href="https://github.com/sirech/talks/raw/master/2016-04-rubygroupmunich-rubocop.pdf"
+              >
+                Using RuboCop
+              </a>
+            </li>
+            <li
+              className="list-group-item"
+            >
+              <a
+                href="https://github.com/sirech/talks/raw/master/2017-03-es2017.pdf"
+              >
+                Intro to ES2017
+              </a>
+            </li>
+            <li
+              className="list-group-item"
+            >
+              <a
+                href="https://github.com/sirech/talks/blob/master/2017-04-rubygroupmunich-yai.pdf"
+              >
+                Assign PRs automatically with YAI
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

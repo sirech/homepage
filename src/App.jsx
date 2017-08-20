@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 
-import { Col, Container, Row } from 'reactstrap'
+import { Container, CardColumns } from 'reactstrap'
 
 import Header from './molecules/header'
 import Links from './molecules/links'
+import Talks from './molecules/talks'
 
 class App extends Component {
   render () {
@@ -18,11 +19,10 @@ class App extends Component {
 
 const Content = () => (
   <Container fluid>
-    <Row>
-      <Col xs='12'>
-        <Links />
-      </Col>
-    </Row>
+    <CardColumns>
+      <Links />
+      <Talks />
+    </CardColumns>
   </Container>
 )
 
