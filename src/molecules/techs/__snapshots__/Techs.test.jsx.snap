@@ -3,6 +3,7 @@
 exports[`components Techs renders correctly 1`] = `
 <div
   className="card"
+  id="techs"
 >
   <h5
     className="card-header"
