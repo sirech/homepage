@@ -5,7 +5,10 @@ cache:
   yarn: true
   directories:
     - node_modules
-script:
-  - npm run build
-  - npm test -- --coverage
-  - cat coverage/lcov.info | node_modules/.bin/coveralls
+jobs:
+  include:
+    - stage: 'Lint'
+      script: npm run linter:js
+    - stage: 'Test'
+      script: npm test -- --coverage
+      after_script: cat coverage/lcov.info | node_modules/.bin/coveralls
