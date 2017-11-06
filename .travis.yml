@@ -1,14 +1,31 @@
 language: node_js
 node_js:
-  - 8
+- 8
 cache:
   yarn: true
   directories:
-    - node_modules
+  - node_modules
 jobs:
   include:
-    - stage: 'Lint'
-      script: npm run linter:js
-    - stage: 'Test'
-      script: npm test -- --coverage
-      after_script: cat coverage/lcov.info | node_modules/.bin/coveralls
+  - stage: Lint
+    script: npm run linter:js
+  - stage: Test
+    script: npm test -- --coverage
+    after_script: cat coverage/lcov.info | node_modules/.bin/coveralls
+  - stage: Deploy
+    before_deploy:
+    - openssl aes-256-cbc -K $encrypted_ecd7d71f89bf_key -iv $encrypted_ecd7d71f89bf_iv -in deploy_rsa.enc -out deploy_rsa -d
+    - chmod 600 deploy_rsa
+    script: skip
+    deploy:
+      provider: script
+      skip_cleanup: true
+      script: ssh -i deploy_rsa $DEPLOY_USER@$DEPLOY_HOST "sh ${DEPLOY_PATH}/bin/update"
+env:
+  global:
+  - secure: j2vFiTulNGNIGkRdfYTp1NKkcA933vFC9cRTL2d03KQWyUb8lddvIiergZtwXWlZIVHzwsEZevTTUpQx4kOqYl4l9k4zKjxVEhG68AipDL/5L6otLsqQLih2IeJO2WTPAY9NjcfyWWmxmlksvFVeuwzkijBTXP9dKBLE+VKBcKHwaAfXFcxYJwYcsMJRmyzRcLPLwHiguTtygCwuf4has7Z1YjviLzDrW8UXsF9lglz4R6YhGI83yS8eg4eoaD904/vlS4PaCE1My14hRI5PAQH7MX/FcAf7OMwcpyqzWCydBTWA2vUId3ZYK/qtQxM8otMKsE3RC2Yh7we0DpFrni8JuiQjKfy9b0R+JjEu0wQ6h4uaV3W5W1vWE8DA2iMXdI/G15SrQI1QzgOUcrzqc1YK9FoXSN3puBYbftobCyOgNAp664rhLVOx4Eh6ydXeiJc2tkswamU33c1cxqlLzuzyBDHpVqhCXe5XGTF8eJroj6fdbjzWzQhnW7wkt0C37OSFuVt0H9gQWYEU9pZecG4NsxqJVj/ZC96nTdWhyH4jJTqFsL7hslNiXzs2DSzdVCURY+fKZzoOiMHNUjuowsN0uAH9rBD5EqynFHplikwxp9OKqaJTj9XlhbZAqVDXmeDBljqTbWQZX0p85WwOn3w2BPc8uUChd3CgSCo+kLI=
+  - secure: BPGOTm2YD4paBC9Qip3WBBzt24L5GLv4rmuS4DYXARcGf+DujFVcmWjBK9FEG77NrnPYhr09P2LY+x6CLaVaNcUtggHY9s17OwgN6n6iheOtCtHQ4TDlR0q2SSGfVJuFvp6DA+CRtF5IfEqnXQMy3bqbR4pxwNzB1OI5NFjkK6Yf83rHyHXnhjMb5PZrqSRWNhoZUP9syQ8SwGIayu37hgpRoe5pgh1RwP9ZwQZxLIbCZX+FHQdpNdhRiKDa2t2QziVmdj+8jcxC/kR6NRKk54rtCok2jl4gd4+CEF3P0DunxzzLgr2viywWpPCTS5tJYEyOs2Qg0k7Eo0ubVPGHqLeyIzZWwLSBsOfkRFw5U4k3tQ/r8D1T2KgqwjajfU2a1bceWTXl4ekWZ1pxpxnuB5snem0+8summpOYNcQ2tCtcTe0Oimsn8xlcxsBX2NRDgVVfqFAnAEZwfeLwBpYjENupZPnDmgI2Xq+y7ZbBl+nUDZSB7yWIkpHCoJHdFVz4peDr44T3FkwmcFr1HOvC0kiLM8JOQIUIUIdcC27/Mkh9T/Thq7yGdL1FzpRQbH/zmLWwP0BH7Somp1YVaVnoPJFujdccDwNQrqwJ5mXMUK59GzjWweLp2fPZOlGB1+mklrlP2zU7Nti33b7wfDfGU2LnbGCZUH2EKfT4jxKEyLM=
+  - secure: zRCNRiM28T6cI0rtgBBpR1u/Gdh6VY0dUEXg/f5LXFQK2LLqqEZl+dJtNRLxf7+wH/KNBEqelXuNcreV/uSbnvu+J5/K15qfgCY1a0T+rgjfTLsNW3Ps0HZdoYb1E/ymT7+E8/R9bZV2ggoHeMGDG04rlsw9/MYn5WW0y044FHGlnLwpFq50r6gp9k6D6jnkqiP3/XPiMVRL02Y11sEHQydBcBXlYwHj8kHpcfX3TMbwZTSd2qsUzyxPOjwsVsLhBDRZjdLf5eo1981tYYTOK3PmusjqAPFYTUKfuUOx9oh3WkrmLYTFz63tcynPI2bOUMU3WnrDY2ezpXSUPOt/8h5q2Sz8HSSAJhiCFi9wGNDrAAkNhAO/ElrywtmDvYMuXTK8+7mgWGi4ZmlV3h5ziuJChiWAzbtqKzqhUC0UcK9hCfo94+qVQ2Sh0jmOmD+EsyIqgBkINXpkYs2GugK63ZAV1ApMv5iXl2yOz2DEND+P177p0DZeTByrMZEOXDlRZtp9SVATYXBKXO62ykQbzEey6MeJkacMXFL/IVTbyIegyC7j5Zn605ZctonZQDDuHLahon+Gmehdu5di+rTe85Hg7MFi726jjD7pNU2AAPa/s5LrZdjDMzhqbgTmNyxpLa0o5EpVlcRL/ujKn7cqVawUbPjHlujnh/QDhwEllJY=
+addons:
+  ssh_known_hosts:
+    secure: mTVtWkSDLm2bJ3mi2Pm4iMVtuIYC7I2eHGChd4GScjY+8gA5bnxRQBs0LHp5Jzds0ZF2yButZX997NAG4HNjPSWutdk/gqZVhXWDlMHt6BXnGm38woN/NjXCD6OFFl3T3kqh1C+8T1CUaUF66AxDJfXKDmCNiHedAJUiy9viIk/6rBN7bExO0rJpSFbJUV+SlV1Eun8aou60h+TlQ91iaiGMDIUOYXGHMLl3MNsLHK5Wd/Yx4MTFTs4oBmOf93CPH1XTa+XymASFOMiLtohJO/RYRYHtxSk+AAHDocQFqqyydNIpJ+rB3I5Th1WG6JgOz1K6VQ17VJWKVzCbZk6vOjAOz+45+rcBWUHCafV2OuDJp5G5Y9GdTzZ1uAY806Oe+IEpHxcwpJ3nKwPvLeKowXUSh0dgI8vEOpTgIPwILfoUudWWDdIZ4q4+DTsFfvd5FAf9/o+v6s3qpxhh39jASp3DxnCBhJCfkVzITBJuAkFylrz+j6yVveH4SGm6CGDo5+FcWhfZ5AestQItmVHFEgMhJNaOnN+gzN34bDTrlg29ncXjgAMvMnfxb4dgFGIXftqawi3gofEtXOJO2Pk3Sv7RpohijN27LcLqf2cPUImpNMsdiYPlgMsVx30/j2hqyXzq6MlZR82hBR1FXXPZk3fMRgiRTG0F0EHiN+TwVhw=
