@@ -310,7 +310,7 @@ exports[`components App renders correctly 1`] = `
               <span
                 className="mr-1 badge badge-default badge-pill"
               >
-                Emacs
+                spacemacs
               </span>
               <span
                 className="mr-1 badge badge-default badge-pill"

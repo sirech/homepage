@@ -3,7 +3,7 @@ import React from 'react'
 import { Card, CardHeader, CardText, CardBlock, Badge } from 'reactstrap'
 
 const tools = [
-  'Emacs',
+  'spacemacs',
   'zsh',
   'git',
   'tmux',
