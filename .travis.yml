@@ -8,6 +8,13 @@ cache:
   yarn: true
   directories:
   - node_modules
+stages:
+  - lint
+  - test
+  - name: docker
+    if: branch = master
+  - name: deploy
+    if: branch = master
 jobs:
   include:
   - stage: Lint
@@ -29,7 +36,7 @@ jobs:
     deploy:
       provider: script
       skip_cleanup: true
-      script: ssh -i deploy_rsa $DEPLOY_USER@$DEPLOY_HOST "sh ${DEPLOY_PATH}/bin/update"
+      script: ssh -i deploy_rsa $DEPLOY_USER@$DEPLOY_HOST "sh ${DEPLOY_PATH}/bin/update homepage"
 env:
   global:
   - secure: j2vFiTulNGNIGkRdfYTp1NKkcA933vFC9cRTL2d03KQWyUb8lddvIiergZtwXWlZIVHzwsEZevTTUpQx4kOqYl4l9k4zKjxVEhG68AipDL/5L6otLsqQLih2IeJO2WTPAY9NjcfyWWmxmlksvFVeuwzkijBTXP9dKBLE+VKBcKHwaAfXFcxYJwYcsMJRmyzRcLPLwHiguTtygCwuf4has7Z1YjviLzDrW8UXsF9lglz4R6YhGI83yS8eg4eoaD904/vlS4PaCE1My14hRI5PAQH7MX/FcAf7OMwcpyqzWCydBTWA2vUId3ZYK/qtQxM8otMKsE3RC2Yh7we0DpFrni8JuiQjKfy9b0R+JjEu0wQ6h4uaV3W5W1vWE8DA2iMXdI/G15SrQI1QzgOUcrzqc1YK9FoXSN3puBYbftobCyOgNAp664rhLVOx4Eh6ydXeiJc2tkswamU33c1cxqlLzuzyBDHpVqhCXe5XGTF8eJroj6fdbjzWzQhnW7wkt0C37OSFuVt0H9gQWYEU9pZecG4NsxqJVj/ZC96nTdWhyH4jJTqFsL7hslNiXzs2DSzdVCURY+fKZzoOiMHNUjuowsN0uAH9rBD5EqynFHplikwxp9OKqaJTj9XlhbZAqVDXmeDBljqTbWQZX0p85WwOn3w2BPc8uUChd3CgSCo+kLI=
