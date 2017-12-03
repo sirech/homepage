@@ -25,18 +25,18 @@ exports[`components Talks renders correctly 1`] = `
       className="list-group-item"
     >
       <a
-        href="https://github.com/sirech/talks/raw/master/2016-02-rubygroupmunich-mediumapps.pdf"
+        href="https://github.com/sirech/talks/raw/master/2017-11-tw-onboarding.pdf"
       >
-        Ruby at XING
+        Welcoming new developers into a team
       </a>
     </li>
     <li
       className="list-group-item"
     >
       <a
-        href="https://github.com/sirech/talks/raw/master/2016-04-rubygroupmunich-rubocop.pdf"
+        href="https://github.com/sirech/talks/blob/master/2017-04-rubygroupmunich-yai.pdf"
       >
-        Using RuboCop
+        Assign PRs automatically with YAI
       </a>
     </li>
     <li
@@ -52,9 +52,18 @@ exports[`components Talks renders correctly 1`] = `
       className="list-group-item"
     >
       <a
-        href="https://github.com/sirech/talks/blob/master/2017-04-rubygroupmunich-yai.pdf"
+        href="https://github.com/sirech/talks/raw/master/2016-04-rubygroupmunich-rubocop.pdf"
       >
-        Assign PRs automatically with YAI
+        Using RuboCop
+      </a>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      <a
+        href="https://github.com/sirech/talks/raw/master/2016-02-rubygroupmunich-mediumapps.pdf"
+      >
+        Ruby at XING
       </a>
     </li>
   </ul>
