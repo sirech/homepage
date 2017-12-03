@@ -11,7 +11,7 @@ exports[`components Tools renders correctly 1`] = `
     Tools
   </h5>
   <div
-    className="card-block"
+    className="card-body"
   >
     <p
       className="card-text"
@@ -39,37 +39,37 @@ exports[`components Tools renders correctly 1`] = `
       </a>
     </p>
     <span
-      className="mr-1 badge badge-default badge-pill"
+      className="mr-1 badge badge-secondary badge-pill"
     >
       spacemacs
     </span>
     <span
-      className="mr-1 badge badge-default badge-pill"
+      className="mr-1 badge badge-secondary badge-pill"
     >
       zsh
     </span>
     <span
-      className="mr-1 badge badge-default badge-pill"
+      className="mr-1 badge badge-secondary badge-pill"
     >
       git
     </span>
     <span
-      className="mr-1 badge badge-default badge-pill"
+      className="mr-1 badge badge-secondary badge-pill"
     >
       tmux
     </span>
     <span
-      className="mr-1 badge badge-default badge-pill"
+      className="mr-1 badge badge-secondary badge-pill"
     >
       Google Chrome
     </span>
     <span
-      className="mr-1 badge badge-default badge-pill"
+      className="mr-1 badge badge-secondary badge-pill"
     >
       hammerspoon
     </span>
     <span
-      className="mr-1 badge badge-default badge-pill"
+      className="mr-1 badge badge-secondary badge-pill"
     >
       Alfred
     </span>

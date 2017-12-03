@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { Card, CardTitle, CardBlock, ListGroup, ListGroupItem } from 'reactstrap'
+import { Card, CardTitle, CardBody, ListGroup, ListGroupItem } from 'reactstrap'
 
 const Links = () => (
   <Card className='mb-3'>
-    <CardBlock>
+    <CardBody>
       <CardTitle tag='h5' className='mb-0'>Links</CardTitle>
-    </CardBlock>
+    </CardBody>
     <ListGroup flush>
       <ListGroupItem>
         <a href='https://github.com/sirech'>

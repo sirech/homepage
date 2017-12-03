@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Card, CardHeader, CardText, CardBlock, ListGroup, ListGroupItem } from 'reactstrap'
+import { Card, CardHeader, CardText, CardBody, ListGroup, ListGroupItem } from 'reactstrap'
 
 const talks = [
   ['https://github.com/sirech/talks/raw/master/2016-02-rubygroupmunich-mediumapps.pdf', 'Ruby at XING'],
@@ -23,9 +23,9 @@ const renderTalks = () => (
 const Talks = () => (
   <Card className='mb-3'>
     <CardHeader tag='h5'>Talks</CardHeader>
-    <CardBlock>
+    <CardBody>
       <CardText>I used to hate talking in front of people. But I have done technical presentations for a while, and at some point I started to like it. Not that I have mastered, though. For instance, I still tend to talk too fast. I have mostly done technical presentations, at work and at ruby meetups. Hope to eventually get some experience with bigger crowds</CardText>
-    </CardBlock>
+    </CardBody>
     <ListGroup flush>
       {renderTalks()}
     </ListGroup>

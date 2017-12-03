@@ -10,7 +10,7 @@ exports[`components Talks renders correctly 1`] = `
     Talks
   </h5>
   <div
-    className="card-block"
+    className="card-body"
   >
     <p
       className="card-text"

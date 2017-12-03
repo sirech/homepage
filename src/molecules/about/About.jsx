@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { Card, CardHeader, CardText, CardBlock } from 'reactstrap'
+import { Card, CardHeader, CardText, CardBody } from 'reactstrap'
 import { HashLink } from 'react-router-hash-link'
 
 const About = () => (
   <Card className='mb-3' >
     <CardHeader tag='h5'>About</CardHeader>
-    <CardBlock>
+    <CardBody>
       <CardText>
         I have been programming for a while already. Counting the time when I was studying, it has been over ten years already. If <a href='http://norvig.com/21-days.html'>Peter Norvig is correct</a> I should know by now what I am doing, although I often get the feeling I don't know anything (which seems to be a widespread problem if you see the job applications we get).
       </CardText>
@@ -22,7 +22,7 @@ const About = () => (
       <CardText>
         I have managed to work with plenty of <HashLink to='#techs'>technologies</HashLink> and <HashLink to='#tools'>tools</HashLink>. It took my a while to realize, though, that while solid tech and good foundations are important, they are not the only thing needed to deliver high quality software.
       </CardText>
-    </CardBlock>
+    </CardBody>
   </Card>
 )
 

@@ -11,7 +11,7 @@ exports[`components Techs renders correctly 1`] = `
     Technologies
   </h5>
   <div
-    className="card-block"
+    className="card-body"
   >
     <p
       className="card-text"

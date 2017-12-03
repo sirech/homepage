@@ -5,7 +5,7 @@ exports[`components Links renders correctly 1`] = `
   className="mb-3 card"
 >
   <div
-    className="card-block"
+    className="card-body"
   >
     <h5
       className="mb-0 card-title"

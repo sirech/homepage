@@ -6,7 +6,7 @@ exports[`components App renders correctly 1`] = `
     className="mb-4"
   >
     <nav
-      className="navbar bg-faded"
+      className="navbar navbar-light bg-light"
     >
       <a
         className="active navbar-brand"
@@ -37,7 +37,7 @@ exports[`components App renders correctly 1`] = `
               About
             </h5>
             <div
-              className="card-block"
+              className="card-body"
             >
               <p
                 className="card-text"
@@ -97,7 +97,7 @@ exports[`components App renders correctly 1`] = `
             className="mb-3 card"
           >
             <div
-              className="card-block"
+              className="card-body"
             >
               <h5
                 className="mb-0 card-title"
@@ -137,7 +137,7 @@ exports[`components App renders correctly 1`] = `
               Talks
             </h5>
             <div
-              className="card-block"
+              className="card-body"
             >
               <p
                 className="card-text"
@@ -184,6 +184,15 @@ exports[`components App renders correctly 1`] = `
                   Assign PRs automatically with YAI
                 </a>
               </li>
+              <li
+                className="list-group-item"
+              >
+                <a
+                  href="https://github.com/sirech/talks/raw/master/2017-11-tw-onboarding.pdf"
+                >
+                  Welcoming new developers into a team
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -200,7 +209,7 @@ exports[`components App renders correctly 1`] = `
               Technologies
             </h5>
             <div
-              className="card-block"
+              className="card-body"
             >
               <p
                 className="card-text"
@@ -280,7 +289,7 @@ exports[`components App renders correctly 1`] = `
               Tools
             </h5>
             <div
-              className="card-block"
+              className="card-body"
             >
               <p
                 className="card-text"
@@ -308,37 +317,37 @@ exports[`components App renders correctly 1`] = `
                 </a>
               </p>
               <span
-                className="mr-1 badge badge-default badge-pill"
+                className="mr-1 badge badge-secondary badge-pill"
               >
                 spacemacs
               </span>
               <span
-                className="mr-1 badge badge-default badge-pill"
+                className="mr-1 badge badge-secondary badge-pill"
               >
                 zsh
               </span>
               <span
-                className="mr-1 badge badge-default badge-pill"
+                className="mr-1 badge badge-secondary badge-pill"
               >
                 git
               </span>
               <span
-                className="mr-1 badge badge-default badge-pill"
+                className="mr-1 badge badge-secondary badge-pill"
               >
                 tmux
               </span>
               <span
-                className="mr-1 badge badge-default badge-pill"
+                className="mr-1 badge badge-secondary badge-pill"
               >
                 Google Chrome
               </span>
               <span
-                className="mr-1 badge badge-default badge-pill"
+                className="mr-1 badge badge-secondary badge-pill"
               >
                 hammerspoon
               </span>
               <span
-                className="mr-1 badge badge-default badge-pill"
+                className="mr-1 badge badge-secondary badge-pill"
               >
                 Alfred
               </span>

@@ -9,7 +9,7 @@ const Header = () => (
     <Helmet>
       <title>hceris</title>
     </Helmet>
-    <Navbar color='faded'>
+    <Navbar light color='light'>
       <LinkContainer to='/about'>
         <NavbarBrand>Mario Fernandez</NavbarBrand>
       </LinkContainer>
