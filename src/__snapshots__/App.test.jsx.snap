@@ -6,7 +6,7 @@ exports[`components App renders correctly 1`] = `
     className="mb-4"
   >
     <nav
-      className="navbar navbar-light bg-light"
+      className="navbar navbar-dark bg-dark"
     >
       <a
         className="active navbar-brand"
