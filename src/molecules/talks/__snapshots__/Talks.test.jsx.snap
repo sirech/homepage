@@ -25,6 +25,15 @@ exports[`components Talks renders correctly 1`] = `
       className="list-group-item"
     >
       <a
+        href="https://github.com/sirech/talks/raw/master/2018-02-tdd_infrastructure.pdf"
+      >
+        TDD for Infrastructure
+      </a>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      <a
         href="https://github.com/sirech/talks/raw/master/2018-01-rubyonice-maintainingrailsapps.pdf"
       >
         Ruby on Ice 2018 - Maintaining Rails Applications through the years
